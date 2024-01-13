@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Apply styles to the app container and its children */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.app-bar {
+  height: 60px; /* Example height for the app bar */
+  background-color: lightblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-container {
+  display: flex;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.manish,
+.virender {
+  width: 50%;
+  height: 100%;
 }
+
+.footer {
+  width: 100%;
+  height: 0;
+  transition: height 0.3s ease; /* Add a transition for smooth height change */
+  background-color: lightgray;
+}
+
+.footer.show {
+  height: 40%;
+}
+
+/* Additional styling for Manish, Virender, and Footer */
+.manish {
+  background-color: lightblue;
+}
+
+.virender {
+  background-color: lightgreen;
+}
+
+
+

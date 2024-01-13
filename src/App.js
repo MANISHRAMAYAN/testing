@@ -1,17 +1,22 @@
-import { BrowserRouter as Router, Route, Routes,  } from "react-router-dom";
-import Menu from "./Compoments/Layout/Menu";
-import Middes from "./Compoments/Layout/Middle/Middes";
-import Home from "./Compoments/Layout/Home";
+import React from "react";
 
-export default function App(){
-  return(
-    <>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
-    
-    </>
-  )
-}
+const App = () => {
+  return <>
+  <h1>hello</h1>
+
+  <div style={{display:'flex',flexDirection:'row',width:'100%'}}>
+    <div style={{width:'100%',backgroundColor:'orange',height:'12px'}}>
+
+    </div>
+    <div style={{width:'20%',backgroundColor:'red',height:'12px'}}>
+
+    </div>
+    <div style={{width:'40%',backgroundColor:'pink',height:'12px'}}>
+
+    </div>
+      
+  </div>
+  </>;
+};
+
+export default App;
