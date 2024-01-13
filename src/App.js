@@ -2,7 +2,7 @@ import React from "react";
 
 const App = () => {
   return <>
-  <h1>hello</h1>
+  <h1>manish</h1>
 
   <div style={{display:'flex',flexDirection:'row',width:'100%'}}>
     <div style={{width:'100%',backgroundColor:'orange',height:'12px'}}>
